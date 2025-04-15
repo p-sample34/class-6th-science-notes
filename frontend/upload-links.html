@@ -37,7 +37,7 @@
     async function uploadLink() {
       const title = document.getElementById('title').value;
       const url = document.getElementById('url').value;
-      await fetch('https://your-backend-url.onrender.com/api/shortlinks', {
+      await fetch('https://class-6th-science-notes.onrender.com/api/shortlinks', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title, url })
