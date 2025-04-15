@@ -22,7 +22,7 @@
 
   <script>
     async function fetchLinks() {
-      const res = await fetch('https://your-backend-url.onrender.com/api/shortlinks');
+      const res = await fetch('https://class-6th-science-notes.onrender.com/api/shortlinks');
       const links = await res.json();
       const list = document.getElementById('link-list');
       list.innerHTML = '';
@@ -48,7 +48,7 @@
     }
 
     async function deleteLink(id) {
-      await fetch('https://your-backend-url.onrender.com/api/shortlinks/' + id, {
+      await fetch('https://class-6th-science-notes.onrender.com/api/shortlinks/' + id, {
         method: 'DELETE'
       });
       fetchLinks();
